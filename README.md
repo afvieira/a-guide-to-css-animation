@@ -15,6 +15,67 @@ Once installed, run `make serve` from the root of the repository.
 
 Any changes you make to code in the `public` directory will be automatically reflected in the browser with live reload goodness! 😋
 
+## CSS Animation
+# CSS Animation:
+
+**animation-name**: used to 
+```css
+animation-name: spin;
+```
+---
+```css
+animation-duration: .5s;
+```
+---
+```css
+animation-timing-function: ease-out;
+```
+---
+```css
+animation-delay: 1s;
+```
+---
+```css
+animation-iteration-count: infinite;
+```
+---
+```css
+animation-direction: normal;
+```
+---
+```css
+animation-fill-mode: none;
+```
+---
+```css
+animation-play-state: running;
+```
+---
+
+This
+
+```css
+div {
+    animation-name: spin;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+```
+
+is equivalent to this
+
+```css
+div {
+    animation: spin .5s ease-out 1s infinite normal none running;
+}
+```
+
+
 ## License
 MIT
 
