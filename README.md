@@ -16,7 +16,6 @@ Once installed, run `make serve` from the root of the repository.
 Any changes you make to code in the `public` directory will be automatically reflected in the browser with live reload goodness! 😋
 
 ## CSS Animation
-# CSS Animation:
 
 **animation-name**: used to 
 ```css
