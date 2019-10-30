@@ -1,18 +1,9 @@
 .animating {
-  -webkit-animation: spin .5s ease-out;
-          animation: spin .5s ease-out;
-}
-
-@-webkit-keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+  animation: spin .5s ease-out;
 }
 
 @keyframes spin {
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }

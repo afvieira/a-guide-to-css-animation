@@ -1,31 +1,27 @@
-
 div {
-  -webkit-animation: flyIn .5s forwards, rotate .5s .75s forwards;
-          animation: flyIn .5s forwards, rotate .5s .75s forwards;
+  animation: flyIn .5s, rotate .5s .75s, flyOut 1.5s 1.5s;
+  animation-fill-mode: forwards;
 }
-@-webkit-keyframes flyIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(300%) scale(0);
-            transform: translateY(300%) scale(0);
-  }
-}
+
 @keyframes flyIn {
   from {
     opacity: 0;
-    -webkit-transform: translateY(300%) scale(0);
-            transform: translateY(300%) scale(0);
+    transform: translateY(300%) scale(0);
   }
 }
-@-webkit-keyframes rotate {
-  to {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-}
+
 @keyframes rotate {
   to {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes flyOut {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    opacity: 0;
+    transform: rotate(-45deg) translateX(100vw) scale(0);
   }
 }

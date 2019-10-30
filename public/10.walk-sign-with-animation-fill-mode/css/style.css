@@ -1,39 +1,26 @@
-div > div:nth-of-type(1) {
-  -webkit-animation-name: lightsOff;
-          animation-name: lightsOff;
-  -webkit-animation-duration: .15s;
-          animation-duration: .15s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+body > div {
+  animation-name: backgroundLight;
+  animation-duration: .15s;
+  animation-delay: 1.15s;
+  animation-fill-mode: forwards;
 }
 
-div > div:nth-of-type(2) {
-  -webkit-animation-name: lightsOn;
-          animation-name: lightsOn;
-  -webkit-animation-duration: .15s;
-          animation-duration: .15s;
-  -webkit-animation-delay: 1.15s;
-          animation-delay: 1.15s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+div>div:nth-of-type(1) {
+  animation-name: lightsOff;
+  animation-duration: .15s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes lightsOff {
-  to {
-    color: #000;
-  }
+div>div:nth-of-type(2) {
+  animation-name: lightsOn;
+  animation-duration: .15s;
+  animation-delay: 1.15s;
+  animation-fill-mode: backwards;
 }
 
 @keyframes lightsOff {
   to {
-    color: #000;
-  }
-}
-
-@-webkit-keyframes lightsOn {
-  from {
     color: #000;
   }
 }
@@ -43,3 +30,10 @@ div > div:nth-of-type(2) {
     color: #000;
   }
 }
+
+@keyframes backgroundLight {
+  to {
+    background-color: #fff;
+  }
+}
+
